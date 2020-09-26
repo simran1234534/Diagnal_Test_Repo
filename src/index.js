@@ -45,7 +45,8 @@ app.use('/api', routes);
 
 
 app.listen(Port, () => {
-    console.log(`Listening to requests on-: http://localhost:${Port}`);
+var host = server.address().172.31.32.204;
+    console.log(`Listening to requests on-: http://host:${Port}`);
 });
 
 module.exports = app;
