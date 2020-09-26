@@ -44,9 +44,10 @@ app.use(cors());
 app.use('/api', routes);
 
 
-app.listen(Port,"172.31.32.204" ,() => {
-var host = server.address().address;
-    console.log(`Listening to requests on-: http://host:${Port}`);
+var server = app.listen(4011, function () {
+    var host = server.address().address;
+    var port = server.address().port;
+    console.log('running at http://' + host + ':' + port)
 });
 
 module.exports = app;
