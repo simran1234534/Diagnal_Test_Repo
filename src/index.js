@@ -44,7 +44,7 @@ app.use(cors());
 app.use('/api', routes);
 
 
-var server = app.listen(4011, function () {
+var server = app.listen(4011,172-31-32-204, function () {
     var host = server.address().address;
     var port = server.address().port;
     console.log('running at http://' + host + ':' + port)
