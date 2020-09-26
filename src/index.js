@@ -44,8 +44,8 @@ app.use(cors());
 app.use('/api', routes);
 
 
-app.listen(Port, () => {
-var host = server.address().172.31.32.204;
+app.listen(Port,"172.31.32.204" ,() => {
+var host = server.address().address;
     console.log(`Listening to requests on-: http://host:${Port}`);
 });
 
